@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'old_english_fiveregular';
+    src: url('fonts/old_english_five-webfont.woff2') format('woff2'),
+         url('fonts/old_english_five-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.old_english_fiveregular {
+    font-family: 'old_english_fiveregular';
+}
