@@ -6,6 +6,37 @@
     font-style: normal;
 }
 
-.old_english_fiveregular {
+h1 span {
     font-family: 'old_english_fiveregular';
+    font-size: 4vw;
+}
+
+
+header {
+    font-size: 3vw;
+    text-align: center;
+    padding: 50px;
+    background-color: #000080;
+    color: #ffffff;
+    border-radius: 3px;
+    margin: 0px 10px 100px 10px;
+}
+
+.article {
+    margin: 0px 10px 0px 10px;
+}
+
+.article-header {
+    font-weight: bold;
+}
+
+.article-body button{
+    background-color: #ffffff;
+    color: #000;
+    border: 0px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
 }

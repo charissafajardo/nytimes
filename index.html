@@ -11,15 +11,68 @@
 
     <!--CSS-->
     <link rel ="stylesheet" type ="text/css" href ="style.css"/>
-    <title class = "old_english_fiveregular">NYTimes Group 9</title>
+    <title>NYTimes Group 9</title>
   </head>
   <body>
-    <h1 class = "fas fa-book-dead"><span class = "old_english_fiveregular">Hello, world!</span></h1>
+    <header>
+        <h1 class = "far fa-newspaper"><span>New York Times Search</span></h1>
+    </header>
 
+    <div class="article">
+        <div class="article-header">
+            Search Parameters
+        </div>
+        <div class="article-body">
+            <form>
+                <div class="form-group">
+                    <label for="search-term">Search Term</label>
+                    <input type="text" class="form-control" id="search-term">
+                </div>
+
+                <div class="form-group">
+                    <label for="number-records">Number of Records to Retrieve</label>
+                    <select class="custom-select" id="number-records" required>
+                        <option value="">Open this select menu</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="2">4</option>
+                        <option value="3">5</option>
+                    </select>
+                    <div class="invalid-feedback">Example invalid custom select feedback</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="search-term">Start Year (Optional):</label>
+                    <input type="text" class="form-control" id="begin-date">
+                </div>
+
+                <div class="form-group">
+                    <label for="search-term">End Year (Optional):</label>
+                    <input type="text" class="form-control" id="end-date">
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="submit-button"><i class="fa fa-search" aria-hidden="true"></i>
+                    Search</button>
+                <button type="submit" class="btn btn-primary" id="clear-button"><i class="fa fa-trash" aria-hidden="true"></i>
+                    Clear</button>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="article">
+        <div class="article-header">
+            Top Articles
+        </div>
+        <div class="article-body" id="top-articles">
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin = "anonymous"></script>
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity = "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin = "anonymous"></script>
     <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity = "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin = "anonymous"></script>
+    <script type = "text/JavaScript" src = int.js></script>
   </body>
 </html>
