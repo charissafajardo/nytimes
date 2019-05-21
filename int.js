@@ -34,8 +34,13 @@
         url: queryURL,
         method: "GET"
       }).then(function(response) {
-        console.log(response);
+      //  console.log(response);
+        // ;
+        var articles = response.response.docs;
+    for (var i = 0; i < articles.length; i++) {
+     $("#top-articles").text(articles[i]);
 
+    }
     });
 });
 
